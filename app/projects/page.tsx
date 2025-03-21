@@ -1,67 +1,44 @@
 import { ProjectCard } from "@/components/project-card";
 
-// This would typically come from a database or CMS
-const projects = [
+export const projects = [
   {
     id: 1,
-    title: "E-commerce Website",
+    title: "Wrist-Mounted Peltier Device",
     description:
-      "A fully responsive e-commerce platform built with Next.js and Stripe.",
+      "I created a wrist-mounted cooling device with a copper heat sink and RC fan.",
     image: "/placeholder.svg?height=300&width=400",
-    tags: ["Next.js", "Stripe", "Tailwind CSS"],
-    link: "/projects/ecommerce",
+    tags: ["Hardware", "Electronics", "3D Printing"],
+    link: "/projects/peltier-device",
   },
   {
     id: 2,
-    title: "Task Management App",
-    description:
-      "A productivity app with drag-and-drop functionality and user authentication.",
+    title: "Rotating Disco Ball Earring",
+    description: "A diso ball earring that spins.",
     image: "/placeholder.svg?height=300&width=400",
-    tags: ["React", "Firebase", "TypeScript"],
-    link: "/projects/task-app",
+    tags: ["Next.js", "Tailwind CSS", "MDX"],
+    link: "/projects/disco-ball-earring",
   },
   {
     id: 3,
-    title: "Portfolio Website",
-    description:
-      "A personal portfolio website with dark mode and blog functionality.",
+    title: "Solar-Powered, Spinning Hanging Planter",
+    description: "It spins when the sun hits it for even growth",
     image: "/placeholder.svg?height=300&width=400",
-    tags: ["Next.js", "Tailwind CSS", "MDX"],
-    link: "/projects/portfolio",
+    tags: ["Hardware", "Electronics", "3D Printing"],
+    link: "/projects/spinning-planter",
   },
   {
     id: 4,
-    title: "Weather Dashboard",
-    description:
-      "A weather application that displays current and forecasted weather data.",
+    title: "Entirely Custom Drone ",
+    description: "It sort of flies.",
     image: "/placeholder.svg?height=300&width=400",
-    tags: ["React", "OpenWeather API", "Chart.js"],
+    tags: ["Hardware", "Electronics", "3D Printing", "C++"],
     link: "/projects/weather-app",
-  },
-  {
-    id: 5,
-    title: "Recipe Finder",
-    description:
-      "A web app that helps users find recipes based on ingredients they have.",
-    image: "/placeholder.svg?height=300&width=400",
-    tags: ["Next.js", "Spoonacular API", "Tailwind CSS"],
-    link: "/projects/recipe-finder",
-  },
-  {
-    id: 6,
-    title: "Social Media Dashboard",
-    description:
-      "An analytics dashboard for tracking social media performance.",
-    image: "/placeholder.svg?height=300&width=400",
-    tags: ["React", "D3.js", "Material UI"],
-    link: "/projects/social-dashboard",
   },
 ];
 
 export const metadata = {
   title: "Projects | Casey Barbello",
-  description:
-    "Portfolio of web development and design projects by Casey Barbello.",
+  description: "Portfolio of my side projects.",
 };
 
 export default function ProjectsPage() {
@@ -72,7 +49,7 @@ export default function ProjectsPage() {
           My Projects
         </h1>
         <p className="mt-4 max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-          A collection of my work, side projects, and experiments.
+          A collection of my, side projects, and... uhm... "experiments".
         </p>
         <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (

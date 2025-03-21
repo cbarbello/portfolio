@@ -8,8 +8,7 @@ export default function NotFound() {
         404 - Page Not Found
       </h1>
       <p className="mt-4 text-muted-foreground">
-        Sorry, the page you're looking for doesn't exist or has been moved. I
-        should probably fix that...
+        Ooops, this page doesn't exist. I should probably fix that.
       </p>
       <Button asChild className="mt-8">
         <Link href="/">Back to Home</Link>

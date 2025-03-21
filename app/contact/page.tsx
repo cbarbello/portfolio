@@ -63,17 +63,17 @@ export default function ContactPage() {
           <div>
             <h2 className="text-2xl font-bold">Get in Touch</h2>
             <p className="mt-2 text-muted-foreground">
-              Fill this out and I'll get back to you as soon as possible.
+              Fill this out and I'll get back to you.
             </p>
 
             <div className="mt-8 space-y-6">
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary" />
-                <span>hello@example.com</span>
+                <span>caseyjbarbello@gmail.com</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-primary" />
-                <span>+1 (555) 123-4567</span>
+                <span>+1 (818) 568-3624</span>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="h-5 w-5 text-primary" />
@@ -86,7 +86,7 @@ export default function ContactPage() {
             <CardHeader>
               <CardTitle>Send a Message</CardTitle>
               <CardDescription>
-                Fill out the form below to send me a message.
+                Fill out this form to send me a message.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -97,7 +97,7 @@ export default function ContactPage() {
                   </div>
                   <h3 className="mt-4 text-xl font-semibold">Message Sent!</h3>
                   <p className="mt-2 text-muted-foreground">
-                    Thanks for reaching out. I'll get back to you shortly.
+                    Thanks for reaching out! I'll get back to you.
                   </p>
                 </div>
               ) : (

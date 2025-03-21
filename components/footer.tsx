@@ -13,7 +13,7 @@ export function Footer() {
         </div>
         <div className="flex gap-4">
           <Link
-            href="https://github.com"
+            href="https://github.com/cbarbello"
             target="_blank"
             rel="noreferrer"
             className="text-muted-foreground hover:text-primary"
@@ -22,16 +22,7 @@ export function Footer() {
             <span className="sr-only">GitHub</span>
           </Link>
           <Link
-            href="https://twitter.com"
-            target="_blank"
-            rel="noreferrer"
-            className="text-muted-foreground hover:text-primary"
-          >
-            <Twitter className="h-5 w-5" />
-            <span className="sr-only">Twitter</span>
-          </Link>
-          <Link
-            href="https://linkedin.com"
+            href="https://linkedin.com/in/cbarbello"
             target="_blank"
             rel="noreferrer"
             className="text-muted-foreground hover:text-primary"
@@ -40,7 +31,7 @@ export function Footer() {
             <span className="sr-only">LinkedIn</span>
           </Link>
           <Link
-            href="mailto:hello@example.com"
+            href="mailto:caseyjbarbello@gmail.com"
             className="text-muted-foreground hover:text-primary"
           >
             <Mail className="h-5 w-5" />

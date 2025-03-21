@@ -1,66 +1,19 @@
 import { BlogPostCard } from "@/components/blog-post-card";
 
-// This would typically come from a database, CMS, or MDX files
-const posts = [
+export const blogPosts = [
   {
     id: 1,
-    title: "The Future of React and Next.js",
-    excerpt:
-      "Exploring the latest features and improvements in React 18 and Next.js 13.",
+    title: "Placeholder Title",
+    excerpt: "It's a placeholder. Don't click on it.",
     date: "March 15, 2023",
     image: "/placeholder.svg?height=200&width=300",
-    slug: "/blog/future-of-react",
-  },
-  {
-    id: 2,
-    title: "Designing for Accessibility",
-    excerpt:
-      "Best practices for creating inclusive web experiences that work for everyone.",
-    date: "February 28, 2023",
-    image: "/placeholder.svg?height=200&width=300",
-    slug: "/blog/designing-for-accessibility",
-  },
-  {
-    id: 3,
-    title: "Getting Started with TypeScript",
-    excerpt:
-      "A beginner's guide to using TypeScript in your JavaScript projects.",
-    date: "January 12, 2023",
-    image: "/placeholder.svg?height=200&width=300",
-    slug: "/blog/typescript-guide",
-  },
-  {
-    id: 4,
-    title: "Building a Design System",
-    excerpt:
-      "How to create a consistent design system for your web applications.",
-    date: "December 5, 2022",
-    image: "/placeholder.svg?height=200&width=300",
-    slug: "/blog/design-system",
-  },
-  {
-    id: 5,
-    title: "Optimizing Website Performance",
-    excerpt:
-      "Techniques for improving load times and user experience on your website.",
-    date: "November 18, 2022",
-    image: "/placeholder.svg?height=200&width=300",
-    slug: "/blog/website-performance",
-  },
-  {
-    id: 6,
-    title: "Introduction to Web Animation",
-    excerpt: "Learn how to add engaging animations to your web projects.",
-    date: "October 22, 2022",
-    image: "/placeholder.svg?height=200&width=300",
-    slug: "/blog/web-animation",
+    slug: "/blog/placeholder",
   },
 ];
 
 export const metadata = {
   title: "Blog | Casey Barbello",
-  description:
-    "Articles and insights on web development, design, and technology by Casey Barbello.",
+  description: "My blog.",
 };
 
 export default function BlogPage() {
@@ -71,18 +24,17 @@ export default function BlogPage() {
           Blog
         </h1>
         <p className="mt-4 max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-          Thoughts, ideas, and insights on web development, design, and
-          technology.
+          I yell at clouds, here ya go.
         </p>
         <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {posts.map((post) => (
+          {blogPosts.map((blogPost) => (
             <BlogPostCard
-              key={post.id}
-              title={post.title}
-              excerpt={post.excerpt}
-              date={post.date}
-              image={post.image}
-              slug={post.slug}
+              key={blogPost.id}
+              title={blogPost.title}
+              excerpt={blogPost.excerpt}
+              date={blogPost.date}
+              image={blogPost.image}
+              slug={blogPost.slug}
             />
           ))}
         </div>

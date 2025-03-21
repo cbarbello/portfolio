@@ -5,7 +5,7 @@ import { ArrowLeft } from "lucide-react";
 
 export const metadata = {
   title: "About | Casey Barbello",
-  description: "Learn more about Casey Barbello, a Full-Stack developer.",
+  description: "Learn more about me.",
 };
 
 export default function AboutPage() {
@@ -27,14 +27,14 @@ export default function AboutPage() {
               About Me
             </h1>
             <p className="mt-4 text-gray-500 dark:text-gray-400">
-              Hi, I'm Casey Barbello, a full-stack developer with with over 8
-              years of experience working across the stack. I left my previous
-              career at Meta to pursue my hobbies and find a position that
-              better aligns with my interests.
+              Hi, I'm Casey Barbello, a Senior Full Stack developer with with
+              over 8 years of experience working across the stack. I left my
+              previous career at Meta to pursue my hobbies and find a position
+              that better aligns with my interests.
             </p>
             <p className="mt-4 text-gray-500 dark:text-gray-400">
-              My backend specialties are Python, Node, SQL, and Postgress. My
-              frontend specialties are React, Next.js, TypeScript. I'm a curious
+              My backend languages are Python, Node, SQL, and PostgreSQL, and I
+              use React, Next.js, TypeScript on the frontend. I'm a curious
               person by nature, so I'm passionate about learning new things,
               deep-diving into complex problems, and solving bottlenecks. I can
               also work across XFN pillars and do whatever is necessary to get a
@@ -42,19 +42,23 @@ export default function AboutPage() {
             </p>
             <p className="mt-4 text-gray-500 dark:text-gray-400">
               I also have a hardware side to me that stated when I was a child
-              (yes, I dumbster dove for electronics and took them apart). I now
-              build whatever comes to my mind when I have the time.
+              (yes, I used to dumpster-dive for electronics to dissasemble). I
+              have now accumulated enough things that I can rapidly turn a
+              random idea into reality.
             </p>
             <h2 className="mt-8 text-2xl font-bold">Skills</h2>
             <ul className="mt-4 grid grid-cols-2 gap-2 text-gray-500 dark:text-gray-400">
+              <li>Python & Node.js</li>
+              <li>SQL & PostgreSQL</li>
+              <li>RESTful APIs</li>
+              <li>CI/CD</li>
               <li>React & Next.js</li>
               <li>TypeScript</li>
-              <li>Tailwind CSS</li>
-              <li>UI/UX Design</li>
-              <li>Responsive Design</li>
-              <li>Accessibility</li>
               <li>Performance Optimization</li>
-              <li>Git & GitHub</li>
+              <li>Git</li>
+              <li>Microcontrollers</li>
+              <li>Electronics</li>
+              <li>Hardware</li>
             </ul>
             <div className="mt-8">
               <Button asChild>
@@ -110,10 +114,10 @@ export default function AboutPage() {
                 Bachelor of Science in Computer Science
               </h3>
               <p className="text-muted-foreground">
-                University of Technology • 2012 - 2016
+                University of California • 2011 - 2015
               </p>
               <p className="mt-2">
-                Specialized in web development and human-computer interaction.
+                Transferred from Economics to Computer Science
               </p>
             </div>
           </div>
