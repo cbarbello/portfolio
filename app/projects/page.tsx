@@ -3,7 +3,7 @@ import { ProjectCard } from "@/components/project-card";
 export const projects = [
   {
     id: 1,
-    title: "Wrist-Mounted Peltier Device",
+    title: "Wrist-Mounted Cooling Device",
     description:
       "I created a wrist-mounted cooling device with a copper heat sink and RC fan.",
     image: "/placeholder.svg?height=300&width=400",
@@ -28,11 +28,19 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Entirely Custom Drone ",
-    description: "It sort of flies.",
+    title: "Custom-Built Drone",
+    description: "It sort of flies. I wrote the flight controller.",
     image: "/placeholder.svg?height=300&width=400",
     tags: ["Hardware", "Electronics", "3D Printing", "C++"],
-    link: "/projects/weather-app",
+    link: "/projects/cutom-built-drone",
+  },
+  {
+    id: 5,
+    title: "Over-Powered Squirt Gun",
+    description: "Waters plants, and the wall.",
+    image: "/placeholder.svg?height=300&width=400",
+    tags: ["Hardware", "Electronics"],
+    link: "/projects/over-powered-squirt-gun",
   },
 ];
 
@@ -43,15 +51,16 @@ export const metadata = {
 
 export default function ProjectsPage() {
   return (
-    <div className="container px-4 py-12 md:px-6 md:py-24">
+    <div className="container px-4 py-12 md:px-6 md:py-24 place-content-center">
       <div className="mx-auto max-w-5xl">
         <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">
           My Projects
         </h1>
         <p className="mt-4 max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-          A collection of my, side projects, and... uhm... "experiments".
+          A collection of my side projects, "experiments", and other things I
+          find interesting.
         </p>
-        <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 place-content-center">
           {projects.map((project) => (
             <ProjectCard
               key={project.id}

@@ -1,18 +1,24 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 
-import { Card, CardContent, CardFooter } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 interface ProjectCardProps {
-  title: string
-  description: string
-  image: string
-  tags: string[]
-  link: string
+  title: string;
+  description: string;
+  image: string;
+  tags: string[];
+  link: string;
 }
 
-export function ProjectCard({ title, description, image, tags, link }: ProjectCardProps) {
+export function ProjectCard({
+  title,
+  description,
+  image,
+  tags,
+  link,
+}: ProjectCardProps) {
   return (
     <Card className="overflow-hidden">
       <div className="relative aspect-video overflow-hidden">
@@ -35,11 +41,13 @@ export function ProjectCard({ title, description, image, tags, link }: ProjectCa
             </Badge>
           ))}
         </div>
-        <Link href={link} className="text-sm font-medium text-primary hover:underline">
+        <Link
+          href={link}
+          className="text-sm font-medium text-primary hover:underline"
+        >
           View Project
         </Link>
       </CardFooter>
     </Card>
-  )
+  );
 }
-

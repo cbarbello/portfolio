@@ -7,7 +7,7 @@ import { BlogPostCard } from "@/components/blog-post-card";
 import { projects } from "./projects/page";
 import { blogPosts } from "./blog/page";
 
-const featuredProjectIds = new Set([1, 2]);
+const featuredProjectIds = new Set([1, 2, 4]);
 const featuredProjects = projects.filter((project) =>
   featuredProjectIds.has(project.id)
 );
@@ -86,8 +86,7 @@ export default function Home() {
                 Featured Blog Posts
               </h2>
             </div>
-          </div>
-          <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 mt-8">
+            {/* <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 mt-8"> */}
             {featuredBlogPosts.map((blogPost) => (
               <BlogPostCard
                 key={blogPost.id}
@@ -98,6 +97,7 @@ export default function Home() {
                 slug={blogPost.slug}
               />
             ))}
+            {/* </div> */}
           </div>
           <div className="flex justify-center mt-8">
             <Button variant="outline" asChild>

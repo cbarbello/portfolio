@@ -15,7 +15,7 @@ export default function AboutPage() {
         <div className="grid gap-12 md:grid-cols-2 md:items-center">
           <div className="relative aspect-square overflow-hidden rounded-xl">
             <Image
-              src="/placeholder.svg?height=600&width=600"
+              src="/profile-picture.jpg"
               alt="Casey Barbello"
               fill
               className="object-cover"

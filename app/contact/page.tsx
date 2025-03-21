@@ -55,16 +55,13 @@ export default function ContactPage() {
           Contact Me
         </h1>
         <p className="mt-4 max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-          Have a question, want to collaborate, or just need advice? Reach out
-          any time.
+          Have a question, want to collaborate, or just need advice? Reach out!
         </p>
 
         <div className="mt-12 grid gap-8 md:grid-cols-2">
           <div>
             <h2 className="text-2xl font-bold">Get in Touch</h2>
-            <p className="mt-2 text-muted-foreground">
-              Fill this out and I'll get back to you.
-            </p>
+            <p className="mt-2 text-muted-foreground">Here's my contact info</p>
 
             <div className="mt-8 space-y-6">
               <div className="flex items-center gap-3">
@@ -85,9 +82,7 @@ export default function ContactPage() {
           <Card>
             <CardHeader>
               <CardTitle>Send a Message</CardTitle>
-              <CardDescription>
-                Fill out this form to send me a message.
-              </CardDescription>
+              <CardDescription>Just fill out this form.</CardDescription>
             </CardHeader>
             <CardContent>
               {isSubmitted ? (
@@ -104,7 +99,7 @@ export default function ContactPage() {
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="space-y-2">
                     <label htmlFor="name" className="text-sm font-medium">
-                      Name
+                      Your Name
                     </label>
                     <Input
                       id="name"
@@ -116,7 +111,7 @@ export default function ContactPage() {
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="email" className="text-sm font-medium">
-                      Email
+                      Your Email
                     </label>
                     <Input
                       id="email"
