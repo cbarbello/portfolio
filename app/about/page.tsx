@@ -72,36 +72,27 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold">Experience</h2>
           <div className="mt-6 space-y-8">
             <div className="border-l-2 border-primary pl-4">
-              <h3 className="text-xl font-bold">Senior Frontend Developer</h3>
+              <h3 className="text-xl font-bold">Senior Software Engineer </h3>
               <p className="text-muted-foreground">
-                Tech Company Inc. • 2021 - Present
+                Meta • April 2019 - April 2024
               </p>
-              <p className="mt-2">
-                Lead frontend development for multiple projects, mentored junior
-                developers, and implemented best practices for accessibility and
-                performance.
-              </p>
+              <p className="mt-2">entry one</p>
             </div>
             <div className="border-l-2 border-primary pl-4">
-              <h3 className="text-xl font-bold">Frontend Developer</h3>
+              <h3 className="text-xl font-bold">
+                Full Stack Software Engineer
+              </h3>
               <p className="text-muted-foreground">
-                Digital Agency XYZ • 2018 - 2021
+                Gigster • October 2017 - September 2018
               </p>
-              <p className="mt-2">
-                Developed responsive websites and web applications for various
-                clients, focusing on clean code and user experience.
-              </p>
+              <p className="mt-2">entry one</p>
             </div>
             <div className="border-l-2 border-primary pl-4">
-              <h3 className="text-xl font-bold">UI/UX Designer</h3>
+              <h3 className="text-xl font-bold">Software Engineer</h3>
               <p className="text-muted-foreground">
-                Creative Studio ABC • 2016 - 2018
+                Sophos • January 2016 - June 2018
               </p>
-              <p className="mt-2">
-                Created user interfaces and experiences for web and mobile
-                applications, conducted user research, and developed design
-                systems.
-              </p>
+              <p className="mt-2">entry one</p>
             </div>
           </div>
         </div>
