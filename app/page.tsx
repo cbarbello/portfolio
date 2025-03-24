@@ -32,6 +32,10 @@ export default function Home() {
                 Senior Full Stack Developer
               </p>
             </div>
+
+            <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
+              {"(This Site is Under Construction)"}
+            </p>
             <div className="space-x-4">
               <Button asChild>
                 <Link href="/projects">View My Work</Link>
