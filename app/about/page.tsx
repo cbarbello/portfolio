@@ -140,10 +140,58 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold">Projects</h2>
           <div className="mt-6 space-y-8">
             <div className="border-l-2 border-primary pl-4">
-              <h3 className="text-xl font-bold"> RateMyGold </h3>
+              <h3 className="text-xl font-bold">
+                RateMyGold (Javacript, HTML, CSS)
+              </h3>
+              <p className="mt-2 font">
+                Note: This project was taken down at the request of Viacom.
+              </p>
+              <p className="mt-2">
+                Google Chrome Extension that retrieves professor ratings from
+                ratemyprofessors.com and injects them into the UCSB course
+                selection website (~4,000 peak MAU).
+              </p>
+              <p className="mt-2">
+                <a
+                  href="https://dailynexus.com/2015-02-05/gold-chrome-extension-born/"
+                  target="_blank"
+                  className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >
+                  Here's a link to a university article about it.
+                </a>
+              </p>
             </div>
             <div className="border-l-2 border-primary pl-4">
-              <h3 className="text-xl font-bold">GrademGold</h3>
+              <h3 className="text-xl font-bold">
+                GrademyGold (Javacript, HTML, CSS)
+              </h3>
+              <p className="mt-2">
+                Note: This project is deprecated and no longer maintained.
+              </p>
+              <p className="mt-2">
+                Google Chrome Extension that enables students to predict their
+                future cumulative GPA within the UCSB student website by
+                entering grades for in-progress courses (~1,000 peak MAU).
+              </p>
+              <p className="mt-2">
+                <a
+                  href="https://chromewebstore.google.com/detail/grademygold/jneakpjhcnajlhemfopfpacikagpolkn?hl=en-US"
+                  target="_blank"
+                  className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >
+                  Deprecated Chrome Store Link.
+                </a>
+              </p>
+              <p className="mt-2">
+                <a
+                  href="https://github.com/cbarbello/GradeMyGold"
+                  target="_blank"
+                  className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >
+                  Github Link (Please don't judge my code, I wrote it in a
+                  night).
+                </a>
+              </p>
             </div>
           </div>
         </div>
@@ -159,7 +207,8 @@ export default function AboutPage() {
                 University of California • 2011 - 2015
               </p>
               <p className="mt-2">
-                Transferred from Economics to Computer Science
+                Transferred from Economics to Computer Science - It was a risky
+                jump, so I skipped receiving a minor.
               </p>
             </div>
           </div>
