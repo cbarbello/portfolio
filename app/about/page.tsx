@@ -76,34 +76,14 @@ export default function AboutPage() {
               <p className="text-muted-foreground">
                 Meta • April 2019 - April 2024
               </p>
-              <p className="mt-2">
-                {" "}
-                Led the replacement of a legacy feature-gating system, achieving
-                the complete elimination of release errors and a 99% reduction
-                in database fetches per page load.
-              </p>
-              Spearheaded multiple high-impact projects, including a geographic
-              object-mapping API, a CMS-backed user-facing communications
-              framework, and a "Trending Topics" dashboard utilized by the
-              Instagram Reels Sales Team. Mentored two interns on high-impact
-              projects, guided 10+ new hires through Meta’s bootcamp, and
-              delivered presentations on emerging tools & technologies to peers.
-              <p className="mt-2">
-                Optimized a high-traffic onboarding flow by streamlining steps
-                for creators, resulting in a 10% higher completion rate and a 2%
-                increase in quality creator profiles.
+              {/* <p className="mt-2">
               </p>
               <p className="mt-2">
-                Spearheaded multiple high-impact projects, including a
-                geographic object-mapping API, a CMS-backed user-facing
-                communications framework, and a "Trending Topics" dashboard
-                utilized by the Instagram Reels Sales Team.
               </p>
               <p className="mt-2">
-                Mentored two interns on high-impact projects, guided 10+ new
-                hires through Meta’s bootcamp, and delivered presentations on
-                emerging tools & technologies to peers.e
               </p>
+              <p className="mt-2">
+              </p> */}
             </div>
             <div className="border-l-2 border-primary pl-4">
               <h3 className="text-xl font-bold">
@@ -113,63 +93,45 @@ export default function AboutPage() {
                 Gigster • Full Stack Software Engineer • October 2017 -
                 September 2018
               </p>
-              <p className="mt-2">
-                Developed and maintained the Gigster CLI, a tool used by
-                freelance developers to bootstrap projects with scaffolding
-                tailored towards development and deployment on the Gigster
-                platform.
-              </p>
-              <p className="mt-2">
-                Contributed to the Gigster Dashboard, a web-app used to
-                facilitate management of distributed development teams.
-              </p>
-              <p className="mt-2">
-                Designed, scoped, and implemented backend services for various
-                client projects.
-              </p>
+              <p className="mt-2"></p>
+              <p className="mt-2"></p>
+              <p className="mt-2"></p>
             </div>
             <div className="border-l-2 border-primary pl-4">
               <h3 className="text-xl font-bold">Software Engineer</h3>
               <p className="text-muted-foreground">
                 Sophos • Software Engineer • January 2016 - June 2018
               </p>
-              <p className="mt-2">
-                Developed a mobile VPN client with real-time malware analysis
-                and policy enforcement.
-              </p>
-              <p className="mt-2">
-                Implemented proximity-based data center speed tests, improving
-                the efficiency of application-side ranking and queuing.
-              </p>
+              <p className="mt-2"></p>
+              <p className="mt-2"></p>
             </div>
           </div>
         </div>
 
         <div className="mt-16">
-          <h2 className="text-2xl font-bold">Slightly Less Relevant</h2>
+          <h2 className="text-2xl font-bold">Internships & College Jobs</h2>
           <div className="mt-6 space-y-8">
             <div className="border-l-2 border-primary pl-4">
               <h3 className="text-xl font-bold"> Software Engineer, Intern </h3>
               <p className="text-muted-foreground">
                 Sophos • June 2015 - September 2015
               </p>
-              <p className="mt-2">Intermship</p>
+              {/* <p className="mt-2"></p> */}
             </div>
             <div className="border-l-2 border-primary pl-4">
               <h3 className="text-xl font-bold">SQA Test Engineer</h3>
               <p className="text-muted-foreground">
                 Karl Storz Imaging • June 2014 - June 2015
               </p>
-              <p className="mt-2">
-                Wrote tests for medical device software (endoscopes)
-              </p>
+              {/* <p className="mt-2">
+              </p> */}
             </div>
             <div className="border-l-2 border-primary pl-4">
               <h3 className="text-xl font-bold">Assistant Web Developer</h3>
               <p className="text-muted-foreground">
                 University of Californica, Santa Barbara • June 2012 - June 2014
               </p>
-              <p className="mt-2">Managed various parts of the UCSB website</p>
+              {/* <p className="mt-2"></p> */}
             </div>
           </div>
         </div>
