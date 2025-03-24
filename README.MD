@@ -1,3 +1,5 @@
 # Personal Portfolio
 
-It's currently under contruction.
+Link: caseybarbello.com
+
+## IMages

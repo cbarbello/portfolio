@@ -24,7 +24,7 @@ export default function BlogPage() {
           Blog
         </h1>
         <p className="mt-4 max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-          I yell at clouds, here ya go.
+          I have opinions and stuff.
         </p>
         <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {blogPosts.map((blogPost) => (
