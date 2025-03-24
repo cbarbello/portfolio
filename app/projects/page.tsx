@@ -6,7 +6,7 @@ export const projects = [
     title: "Wrist-Mounted Cooling Device",
     description:
       "I created a wrist-mounted cooling device with a copper heat sink and RC fan.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/wrist-mounted-cooling-device-v4.jpeg?height=325&width=325",
     tags: ["Hardware", "Electronics", "3D Printing"],
     link: "/projects/peltier-device",
   },
@@ -14,7 +14,7 @@ export const projects = [
     id: 2,
     title: "Rotating Disco Ball Earring",
     description: "A diso ball earring that spins.",
-    image: "/spinning-disco-ball-earring.jpeg?height=300&width=400",
+    image: "/spinning-disco-ball-earring.jpeg?height=325&width=325",
     tags: ["Hardware", "Electronics", "3D Printing"],
     link: "/projects/disco-ball-earring",
   },
@@ -22,7 +22,7 @@ export const projects = [
     id: 3,
     title: "Solar-Powered, Spinning Hanging Planter",
     description: "It spins when the sun hits it for even growth",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/placeholder.svg?height=325&width=325",
     tags: ["Hardware", "Electronics", "3D Printing"],
     link: "/projects/spinning-planter",
   },
@@ -30,7 +30,7 @@ export const projects = [
     id: 4,
     title: "Custom-Built Drone",
     description: "It sort of flies. I wrote the flight controller.",
-    image: "/custom-built-drone.jpeg?height=300&width=400",
+    image: "/custom-built-drone.jpeg?height=325&width=325",
     tags: ["Hardware", "Electronics", "3D Printing", "C++"],
     link: "/projects/cutom-built-drone",
   },
@@ -38,7 +38,7 @@ export const projects = [
     id: 5,
     title: "Over-Powered Squirt Gun",
     description: "Waters plants, and the wall.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/over-powered-squirt-gun.jpeg?height=325&width=325",
     tags: ["Hardware", "Electronics"],
     link: "/projects/over-powered-squirt-gun",
   },
@@ -56,7 +56,7 @@ export default function ProjectsPage() {
         <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">
           My Projects
         </h1>
-        <p className="mt-4 max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
+        <p className="mt-4 max-w-[700px] text-gray-500 md:text-xl dark:text-gray-325">
           A collection of my side projects, experiments, and other interesting
           finds. interesting.
         </p>
