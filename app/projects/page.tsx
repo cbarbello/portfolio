@@ -58,7 +58,7 @@ export default function ProjectsPage() {
         </h1>
         <p className="mt-4 max-w-[700px] text-gray-500 md:text-xl dark:text-gray-325">
           A collection of my side projects, experiments, and other interesting
-          finds. interesting.
+          finds.
         </p>
         <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 place-content-center">
           {projects.map((project) => (

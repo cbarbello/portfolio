@@ -15,7 +15,7 @@ export default function AboutPage() {
         <div className="grid gap-12 md:grid-cols-2 md:items-center">
           <div className="relative aspect-square overflow-hidden rounded-xl">
             <Image
-              src="/profile-picture.jpg"
+              src="/profile-picture.jpeg"
               alt="Casey Barbello"
               fill
               className="object-cover"
@@ -35,9 +35,9 @@ export default function AboutPage() {
             <p className="mt-4 text-gray-500 dark:text-gray-400">
               I'm a curious person by nature, so I'm passionate about learning
               new things, deep-diving into complex problems, and solving
-              bottlenecks. I can also work across XFN pillars and do whatever is
-              necessary to get a a project over the line whenever business needs
-              require it.
+              bottlenecks. I can also work across the most silo'd of XFN pillars
+              and do whatever is necessary to get a project over the line
+              whenever business needs require it.
             </p>
             <p className="mt-4 text-gray-500 dark:text-gray-400">
               I also have a hardware side to me that started when I was a child
