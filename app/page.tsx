@@ -29,7 +29,7 @@ export default function Home() {
                 Casey Barbello
               </h1>
               <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                Senior Full Stack Developer
+                Senior Full Stack Software Engineer
               </p>
             </div>
 
