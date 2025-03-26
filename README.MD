@@ -2,7 +2,7 @@
 
 Currently under construction.
 
-Link: https://caseybarbello.com
+Link: https://www.caseyjbarbello.com
 
 ## Technologies Used
 
