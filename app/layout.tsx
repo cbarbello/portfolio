@@ -8,9 +8,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Casey Barbello - Senior Full Stack Developer",
+  title: "Casey Barbello - Senior Full Stack Engineer",
   description:
-    "Personal portfolio and blog of Casey Barbello, a Senior Full Stack developer.",
+    "Personal portfolio and blog of Casey Barbello, a Senior Full Stack engineer.",
   generator: "v0.dev",
 };
 

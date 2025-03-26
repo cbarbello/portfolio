@@ -62,7 +62,7 @@ export function Header() {
         <div className="fixed inset-0 z-50 bg-background md:hidden">
           <div className="container flex h-16 items-center justify-between px-4">
             <Link href="/" className="flex items-center space-x-2">
-              <span className="text-xl font-bold">JD</span>
+              <span className="text-xl font-bold">CB</span>
             </Link>
             <Button
               variant="ghost"

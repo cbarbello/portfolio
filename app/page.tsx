@@ -20,7 +20,6 @@ const featuredBlogPosts = blogPosts.filter((blogPost) =>
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Hero Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-4 text-center">
@@ -32,13 +31,17 @@ export default function Home() {
                 Senior Full Stack Software Engineer
               </p>
             </div>
-
             <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-              {"(This Site is Under Construction)"}
+              {"(This site is under construction)"}
             </p>
             <div className="space-x-4">
               <Button asChild>
-                <Link href="/projects">View My Work</Link>
+                <Link
+                  href="https://github.com/cbarbello/portfolio"
+                  target="_blank"
+                >
+                  Source Code
+                </Link>
               </Button>
               <Button variant="outline" asChild>
                 <Link href="/contact">Contact Me</Link>
@@ -81,7 +84,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Latest Blog Posts */}
+      {/* Featured Blog Posts */}
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -90,7 +93,6 @@ export default function Home() {
                 Featured Blog Posts
               </h2>
             </div>
-            {/* <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 mt-8"> */}
             {featuredBlogPosts.map((blogPost) => (
               <BlogPostCard
                 key={blogPost.id}
@@ -101,7 +103,6 @@ export default function Home() {
                 slug={blogPost.slug}
               />
             ))}
-            {/* </div> */}
           </div>
           <div className="flex justify-center mt-8">
             <Button variant="outline" asChild>
