@@ -8,6 +8,7 @@ Link: https://www.caseyjbarbello.com
 
 - [NextJS](https://nextjs.org/)
 - [Tailwindcss](https://tailwindcss.com/)
+- [Vercel](https://vercel.com/home)
 
 ## Steps to Run
 
