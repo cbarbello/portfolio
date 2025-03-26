@@ -36,7 +36,6 @@ export function Footer() {
             className="text-muted-foreground hover:text-primary"
           >
             <Mail className="h-5 w-5" />
-            <span className="sr-only">Email</span>
           </a>
         </div>
       </div>

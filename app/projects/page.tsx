@@ -5,7 +5,7 @@ export const projects = [
     id: 1,
     title: "Wrist-Mounted Cooling Device",
     description:
-      "I created a wrist-mounted cooling device with a copper heat sink and RC fan.",
+      "I created a wrist-mounted cooling device that can literally give you frostbite.",
     image: "/wrist-mounted-cooling-device-v4.jpeg?height=325&width=325",
     tags: ["Hardware", "Electronics", "3D Printing"],
     link: "/projects/peltier-device",
@@ -21,8 +21,8 @@ export const projects = [
   {
     id: 3,
     title: "Solar-Powered, Spinning Hanging Planter",
-    description: "It spins when the sun hits it for even growth",
-    image: "/placeholder.svg?height=325&width=325",
+    description: "It spins when the sun hits it for even growth.",
+    image: "/solar-powered-spinning-planter.jpeg?height=325&width=325",
     tags: ["Hardware", "Electronics", "3D Printing"],
     link: "/projects/spinning-planter",
   },
@@ -37,7 +37,7 @@ export const projects = [
   {
     id: 5,
     title: "Over-Powered Squirt Gun",
-    description: "Waters plants, and the wall.",
+    description: "Waters plants, and the walls.",
     image: "/over-powered-squirt-gun.jpeg?height=325&width=325",
     tags: ["Hardware", "Electronics"],
     link: "/projects/over-powered-squirt-gun",
