@@ -6,8 +6,8 @@ Link: https://www.caseyjbarbello.com
 
 ## Technologies Used
 
-- (NextJS)[https://nextjs.org/]
-- (Tailwindcss)[https://tailwindcss.com/]
+- [NextJS](https://nextjs.org/)
+- [Tailwindcss](https://tailwindcss.com/)
 
 ## Steps to Run
 
