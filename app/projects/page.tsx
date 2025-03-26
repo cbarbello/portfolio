@@ -13,7 +13,7 @@ export const projects = [
   {
     id: 2,
     title: "Rotating Disco Ball Earring",
-    description: "A diso ball earring that spins.",
+    description: "A disco ball earring that spins.",
     image: "/spinning-disco-ball-earring.jpeg?height=325&width=325",
     tags: ["Hardware", "Electronics", "3D Printing"],
     link: "/projects/disco-ball-earring",
