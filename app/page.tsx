@@ -6,6 +6,7 @@ import { ProjectCard } from "@/components/project-card";
 import { BlogPostCard } from "@/components/blog-post-card";
 import { projects } from "./projects/page";
 import { blogPosts } from "./blog/page";
+import Head from "next/head";
 
 const featuredProjectIds = new Set([1, 2, 4]);
 const featuredProjects = projects.filter((project) =>
@@ -20,6 +21,9 @@ const featuredBlogPosts = blogPosts.filter((blogPost) =>
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-4 text-center">
