@@ -23,7 +23,7 @@ export function ProjectCard({
     <Card className="overflow-hidden">
       <div className="relative aspect-square overflow-hidden">
         <Image
-          src={image || "/placeholder.svg"}
+          src={image || "/placeholder.png"}
           alt={title}
           fill
           className="object-cover transition-transform hover:scale-105"

@@ -1,22 +1,28 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 
-import { Card, CardContent, CardFooter } from "@/components/ui/card"
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
 
 interface BlogPostCardProps {
-  title: string
-  excerpt: string
-  date: string
-  image: string
-  slug: string
+  title: string;
+  excerpt: string;
+  date: string;
+  image: string;
+  slug: string;
 }
 
-export function BlogPostCard({ title, excerpt, date, image, slug }: BlogPostCardProps) {
+export function BlogPostCard({
+  title,
+  excerpt,
+  date,
+  image,
+  slug,
+}: BlogPostCardProps) {
   return (
     <Card className="overflow-hidden">
-      <div className="relative aspect-video overflow-hidden">
+      <div className="relative aspect-square overflow-hidden">
         <Image
-          src={image || "/placeholder.svg"}
+          src={image || "/placeholder.png"}
           alt={title}
           fill
           className="object-cover transition-transform hover:scale-105"
@@ -28,11 +34,13 @@ export function BlogPostCard({ title, excerpt, date, image, slug }: BlogPostCard
         <p className="mt-2 text-muted-foreground">{excerpt}</p>
       </CardContent>
       <CardFooter className="p-4 pt-0">
-        <Link href={slug} className="text-sm font-medium text-primary hover:underline">
+        <Link
+          href={slug}
+          className="text-sm font-medium text-primary hover:underline"
+        >
           Read More
         </Link>
       </CardFooter>
     </Card>
-  )
+  );
 }
-

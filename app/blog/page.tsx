@@ -6,7 +6,7 @@ export const blogPosts = [
     title: "Placeholder Title",
     excerpt: "It's a placeholder. Don't click on it.",
     date: "March 15, 2023",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/placeholder.png?height=325&width=325",
     slug: "/blog/placeholder",
   },
 ];

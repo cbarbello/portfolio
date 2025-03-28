@@ -11,7 +11,7 @@ export const blogblogPosts = [
     content: `
       <p>Hey, I told you it was a placeholder... Check out my projects page if you'd like.</p>
     `,
-    image: "/placeholder.svg?height=400&width=800",
+    image: "/placeholder.png?height=400&width=800",
   },
 ];
 
@@ -68,7 +68,7 @@ export default function BlogblogPostPage({
 
         <div className="relative mt-8 aspect-video overflow-hidden rounded-xl">
           <Image
-            src={blogPost.image || "/placeholder.svg"}
+            src={blogPost.image || "/placeholder.png"}
             alt={blogPost.title}
             fill
             className="object-cover"

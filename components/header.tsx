@@ -11,9 +11,9 @@ import { cn } from "@/lib/utils";
 
 const navItems = [
   { name: "Home", path: "/" },
+  { name: "About", path: "/about" },
   { name: "Projects", path: "/projects" },
   { name: "Blog", path: "/blog" },
-  { name: "About", path: "/about" },
   { name: "Contact", path: "/contact" },
 ];
 
