@@ -4,8 +4,8 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import { Button } from "@/components/ui/button";
 import { ProjectCard } from "@/components/project-card";
 import { BlogPostCard } from "@/components/blog-post-card";
-import { projects } from "./projects/page";
-import { blogPosts } from "./blog/page";
+import { projects } from "./projects/projectsPage";
+import { blogPosts } from "./blogpage/blogPage";
 import Head from "next/head";
 
 const featuredProjectIds = new Set([1, 2, 4]);
@@ -15,7 +15,7 @@ const featuredProjects = projects.filter((project) =>
 
 const featuredBlogPostIds = new Set([1]);
 const featuredBlogPosts = blogPosts.filter((blogPost) =>
-  featuredProjectIds.has(blogPost.id)
+  featuredBlogPostIds.has(blogPost.id)
 );
 
 export default function Home() {
@@ -49,7 +49,7 @@ export default function Home() {
                     Source Code
                   </Link>
                 </Button>
-                <Button variant="outline" asChild>
+                <Button asChild>
                   <Link href="/contact">Contact Me</Link>
                 </Button>
               </div>
@@ -80,7 +80,7 @@ export default function Home() {
               ))}
             </div>
             <div className="flex justify-center mt-8">
-              <Button variant="outline" asChild>
+              <Button asChild>
                 <Link href="/projects" className="flex items-center">
                   View All Projects
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -111,7 +111,7 @@ export default function Home() {
               ))}
             </div>
             <div className="flex justify-center mt-8">
-              <Button variant="outline" asChild>
+              <Button asChild>
                 <Link href="/blog" className="flex items-center">
                   Read All Posts
                   <ArrowRight className="ml-2 h-4 w-4" />

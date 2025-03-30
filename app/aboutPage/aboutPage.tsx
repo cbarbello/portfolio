@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
 
 export const metadata = {
   title: "About | Casey Barbello",
@@ -27,7 +26,7 @@ export default function AboutPage() {
               About Me
             </h1>
             <p className="mt-4 text-gray-500 dark:text-gray-400">
-              Hi, I'm Casey Barbello, a Senior Full Stack developer with with
+              Hey, 'm Casey Barbello, a Senior Full Stack developer with with
               over 8 years of experience working across the stack. I left my
               previous career at Meta to pursue my hobbies and find a position
               that better aligns with my interests.
@@ -75,14 +74,6 @@ export default function AboutPage() {
               <p className="text-muted-foreground">
                 Meta • April 2019 - April 2024
               </p>
-              {/* <p className="mt-2">
-              </p>
-              <p className="mt-2">
-              </p>
-              <p className="mt-2">
-              </p>
-              <p className="mt-2">
-              </p> */}
             </div>
             <div className="border-l-2 border-primary pl-4">
               <h3 className="text-xl font-bold">
@@ -92,17 +83,12 @@ export default function AboutPage() {
                 Gigster • Full Stack Software Engineer • October 2017 -
                 September 2018
               </p>
-              <p className="mt-2"></p>
-              <p className="mt-2"></p>
-              <p className="mt-2"></p>
             </div>
             <div className="border-l-2 border-primary pl-4">
               <h3 className="text-xl font-bold">Software Engineer</h3>
               <p className="text-muted-foreground">
                 Sophos • Software Engineer • January 2016 - June 2018
               </p>
-              <p className="mt-2"></p>
-              <p className="mt-2"></p>
             </div>
           </div>
         </div>

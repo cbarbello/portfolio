@@ -16,8 +16,17 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
+import { resend } from "@/utils/sendEmail";
+
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
+  interface EmailFormData {
+    name: string;
+    email: string;
+    subject: string;
+    message: string;
+  }
+
+  const [emailFormData, setEmailFormData] = useState<EmailFormData>({
     name: "",
     email: "",
     subject: "",
@@ -30,16 +39,23 @@ export default function ContactPage() {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+    setEmailFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
+    await resend.emails.send({
+      from: emailFormData.email,
+      to: "caseyjbarbello@gmail.com",
+      subject: emailFormData.subject,
+      html: emailFormData.message,
+    });
+
     setIsSubmitting(false);
     setIsSubmitted(true);
-    setFormData({ name: "", email: "", subject: "", message: "" });
+    setEmailFormData({ name: "", email: "", subject: "", message: "" });
 
     // Reset success message after 3 seconds
     setTimeout(() => setIsSubmitted(false), 3000);
@@ -59,7 +75,6 @@ export default function ContactPage() {
           <div>
             <h2 className="text-2xl font-bold">Get in Touch</h2>
             <p className="mt-2 text-muted-foreground">Here's my contact info</p>
-
             <div className="mt-8 space-y-6">
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary" />
@@ -101,7 +116,7 @@ export default function ContactPage() {
                     <Input
                       id="name"
                       name="name"
-                      value={formData.name}
+                      value={emailFormData.name}
                       onChange={handleChange}
                       required
                     />
@@ -114,7 +129,7 @@ export default function ContactPage() {
                       id="email"
                       name="email"
                       type="email"
-                      value={formData.email}
+                      value={emailFormData.email}
                       onChange={handleChange}
                       required
                     />
@@ -126,7 +141,7 @@ export default function ContactPage() {
                     <Input
                       id="subject"
                       name="subject"
-                      value={formData.subject}
+                      value={emailFormData.subject}
                       onChange={handleChange}
                       required
                     />
@@ -139,7 +154,7 @@ export default function ContactPage() {
                       id="message"
                       name="message"
                       rows={5}
-                      value={formData.message}
+                      value={emailFormData.message}
                       onChange={handleChange}
                       required
                     />
