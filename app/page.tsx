@@ -4,9 +4,9 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import { Button } from "@/components/ui/button";
 import { ProjectCard } from "@/components/project-card";
 import { BlogPostCard } from "@/components/blog-post-card";
-import { projects } from "./projects/projectsPage";
-import { blogPosts } from "./blogpage/blogPage";
-import Head from "next/head";
+import { projects } from "./projects/page";
+import { blogPosts } from "./blogPage/page";
+import type { Metadata } from "next";
 
 const featuredProjectIds = new Set([1, 2, 4]);
 const featuredProjects = projects.filter((project) =>
@@ -18,13 +18,15 @@ const featuredBlogPosts = blogPosts.filter((blogPost) =>
   featuredBlogPostIds.has(blogPost.id)
 );
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "Casey Barbello's Portfolio",
+};
+
+export default function HomePage() {
   return (
     <>
       <GoogleAnalytics gaId="G-KSCWGZC3DE" />
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <link rel="icon" href="/favicon.ico" />
       <div className="flex flex-col min-h-screen">
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
           <div className="container px-4 md:px-6">
