@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ProjectCard } from "@/components/project-card";
 import { BlogPostCard } from "@/components/blog-post-card";
 import { projects } from "./projects/page";
-import { blogPosts } from "./blogPage/page";
+import { blogPosts } from "./blog/page";
 import type { Metadata } from "next";
 
 const featuredProjectIds = new Set([1, 2, 4]);
