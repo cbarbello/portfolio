@@ -15,17 +15,16 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { sendEmail } from "@/utils/sendEmail";
 
-import { resend } from "@/utils/sendEmail";
+export interface EmailFormData {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+}
 
 export default function ContactPage() {
-  interface EmailFormData {
-    name: string;
-    email: string;
-    subject: string;
-    message: string;
-  }
-
   const [emailFormData, setEmailFormData] = useState<EmailFormData>({
     name: "",
     email: "",
@@ -46,12 +45,7 @@ export default function ContactPage() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    await resend.emails.send({
-      from: emailFormData.email,
-      to: "caseyjbarbello@gmail.com",
-      subject: emailFormData.subject,
-      html: emailFormData.message,
-    });
+    await sendEmail(emailFormData);
 
     setIsSubmitting(false);
     setIsSubmitted(true);
@@ -78,11 +72,11 @@ export default function ContactPage() {
             <div className="mt-8 space-y-6">
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary" />
-                <span>caseyjbarbello@gmail.com</span>
+                <span>{process.env.RECIPIENT_EMAIL_ADDRESS}</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-primary" />
-                <span>+1 (818) 568-3624</span>
+                <span>{process.env.RECIPIENT_PHONE_NUMBER}</span>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="h-5 w-5 text-primary" />
