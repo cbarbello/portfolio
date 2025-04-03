@@ -75,7 +75,7 @@ export default function HomePage() {
                   description={project.description}
                   image={project.image}
                   tags={project.tags}
-                  link={project.link}
+                  slug={project.slug}
                 />
               ))}
             </div>

@@ -1,4 +1,5 @@
 import { ProjectCard } from "@/components/project-card";
+import Link from "next/link";
 
 export const projects = [
   {
@@ -8,7 +9,7 @@ export const projects = [
       "I created a wrist-mounted cooling device that can literally give you frostbite.",
     image: "/wrist-mounted-cooling-device-v4.jpeg?height=325&width=325",
     tags: ["Hardware", "Electronics", "3D Printing"],
-    link: "/projects/peltier-device",
+    slug: "/projects/peltier-device",
   },
   {
     id: 2,
@@ -16,7 +17,7 @@ export const projects = [
     description: "A disco ball earring that spins.",
     image: "/spinning-disco-ball-earring.jpeg?height=325&width=325",
     tags: ["Hardware", "Electronics", "3D Printing"],
-    link: "/projects/disco-ball-earring",
+    slug: "/projects/disco-ball-earring",
   },
   {
     id: 3,
@@ -24,7 +25,7 @@ export const projects = [
     description: "It spins when the sun hits it for even growth.",
     image: "/solar-powered-spinning-planter.jpeg?height=325&width=325",
     tags: ["Hardware", "Electronics", "3D Printing"],
-    link: "/projects/spinning-planter",
+    slug: "/projects/spinning-planter",
   },
   {
     id: 4,
@@ -32,7 +33,7 @@ export const projects = [
     description: "It sort of flies. I wrote the flight controller.",
     image: "/custom-built-drone.jpeg?height=325&width=325",
     tags: ["Hardware", "Electronics", "3D Printing", "C++"],
-    link: "/projects/cutom-built-drone",
+    slug: "/projects/cutom-built-drone",
   },
   {
     id: 5,
@@ -40,7 +41,7 @@ export const projects = [
     description: "Waters plants, and the walls.",
     image: "/over-powered-squirt-gun.jpeg?height=325&width=325",
     tags: ["Hardware", "Electronics"],
-    link: "/projects/over-powered-squirt-gun",
+    slug: "/projects/over-powered-squirt-gun",
   },
 ];
 
@@ -68,7 +69,7 @@ export default function ProjectsPage() {
               description={project.description}
               image={project.image}
               tags={project.tags}
-              link={project.link}
+              slug={project.slug}
             />
           ))}
         </div>

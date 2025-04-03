@@ -9,7 +9,7 @@ interface ProjectCardProps {
   description: string;
   image: string;
   tags: string[];
-  link: string;
+  slug: string;
 }
 
 export function ProjectCard({
@@ -17,9 +17,39 @@ export function ProjectCard({
   description,
   image,
   tags,
-  link,
+  slug,
 }: ProjectCardProps) {
   return (
+    //   <Card className="overflow-hidden">
+    //     <div className="relative aspect-square overflow-hidden">
+    //       <Image
+    //         src={image || "/placeholder.png"}
+    //         alt={title}
+    //         fill
+    //         className="object-cover transition-transform hover:scale-105"
+    //       />
+    //     </div>
+    //     <CardContent className="p-4">
+    //       <h3 className="text-xl font-bold">{title}</h3>
+    //       <p className="mt-2 text-muted-foreground">{description}</p>
+    //     </CardContent>
+    //     <CardFooter className="flex flex-col items-start gap-2 p-4 pt-0">
+    //       <div className="flex flex-wrap gap-2">
+    //         {tags.map((tag) => (
+    //           <Badge key={tag} variant="secondary">
+    //             {tag}
+    //           </Badge>
+    //         ))}
+    //       </div>
+    //       <Link
+    //         href={link}
+    //         className="text-sm font-medium text-primary hover:underline"
+    //       >
+    //         View Project
+    //       </Link>
+    //     </CardFooter>
+    //   </Card>
+    // );
     <Card className="overflow-hidden">
       <div className="relative aspect-square overflow-hidden">
         <Image
@@ -30,10 +60,10 @@ export function ProjectCard({
         />
       </div>
       <CardContent className="p-4">
-        <h3 className="text-xl font-bold">{title}</h3>
+        <h3 className="mt-2 text-xl font-bold">{title}</h3>
         <p className="mt-2 text-muted-foreground">{description}</p>
       </CardContent>
-      <CardFooter className="flex flex-col items-start gap-2 p-4 pt-0">
+      <CardFooter className="p-4 pt-0">
         <div className="flex flex-wrap gap-2">
           {tags.map((tag) => (
             <Badge key={tag} variant="secondary">
@@ -42,10 +72,10 @@ export function ProjectCard({
           ))}
         </div>
         <Link
-          href={link}
+          href={slug}
           className="text-sm font-medium text-primary hover:underline"
         >
-          View Project
+          Read More
         </Link>
       </CardFooter>
     </Card>
