@@ -29,13 +29,13 @@ export default function HomePage() {
       <link rel="icon" href="/favicon.ico" />
       <div className="flex flex-col min-h-screen">
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
-          <div className="container px-4 md:px-6">
+          <div className="container px-16 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
-                <h1 className="">Casey Barbello</h1>
-                <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
+                <h1>Casey Barbello</h1>
+                <h2 className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
                   Senior Full Stack Software Engineer
-                </p>
+                </h2>
               </div>
               <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
                 {"(This site is under construction)"}
