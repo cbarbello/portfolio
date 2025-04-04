@@ -1,4 +1,4 @@
-import { ProjectCard } from "@/components/project-card";
+import { ProjectCard } from "@/app/projects/project-card";
 import Link from "next/link";
 
 export const projects = [

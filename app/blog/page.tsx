@@ -1,4 +1,4 @@
-import { BlogPostCard } from "@/components/blog-post-card";
+import { BlogPostCard } from "@/app/blog/blog-post-card";
 
 export const blogPosts = [
   {

@@ -2,8 +2,8 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Button } from "@/components/ui/button";
-import { ProjectCard } from "@/components/project-card";
-import { BlogPostCard } from "@/components/blog-post-card";
+import { ProjectCard } from "@/app/projects/project-card";
+import { BlogPostCard } from "@/app/blog/blog-post-card";
 import { projects } from "./projects/page";
 import { blogPosts } from "./blog/page";
 import type { Metadata } from "next";
@@ -29,7 +29,7 @@ export default function HomePage() {
       <link rel="icon" href="/favicon.ico" />
       <div className="flex flex-col min-h-screen">
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
-          <div className="container px-16 md:px-6">
+          <div className="container px-12 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1>Casey Barbello</h1>
@@ -41,7 +41,7 @@ export default function HomePage() {
                 {"(This site is under construction)"}
               </p>
               <div className="space-x-4">
-                <Button asChild>
+                <Button asChild variant="outline">
                   <Link
                     href="https://github.com/cbarbello/portfolio"
                     target="_blank"
@@ -49,7 +49,7 @@ export default function HomePage() {
                     Source Code
                   </Link>
                 </Button>
-                <Button asChild>
+                <Button asChild variant="outline">
                   <Link href="/contact">Contact Me</Link>
                 </Button>
               </div>

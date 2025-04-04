@@ -22,7 +22,6 @@ const nextConfig = {
     parallelServerCompiles: true,
   },
   env: {
-    RESEND_API_KEY: process.env.RESEND_API_KEY,
     EMAIL_ADDRESS: process.env.EMAIL_ADDRESS,
     PHONE_NUMBER: process.env.PHONE_NUMBER,
   },
