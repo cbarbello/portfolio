@@ -75,14 +75,6 @@ export default function AboutPage() {
               <p className="text-muted-foreground">
                 Meta • April 2019 - April 2024
               </p>
-              {/* <p className="mt-2">
-              </p>
-              <p className="mt-2">
-              </p>
-              <p className="mt-2">
-              </p>
-              <p className="mt-2">
-              </p> */}
             </div>
             <div className="border-l-2 border-primary pl-4">
               <h3 className="text-xl font-bold">
@@ -92,17 +84,12 @@ export default function AboutPage() {
                 Gigster • Full Stack Software Engineer • October 2017 -
                 September 2018
               </p>
-              <p className="mt-2"></p>
-              <p className="mt-2"></p>
-              <p className="mt-2"></p>
             </div>
             <div className="border-l-2 border-primary pl-4">
               <h3 className="text-xl font-bold">Software Engineer</h3>
               <p className="text-muted-foreground">
                 Sophos • Software Engineer • January 2016 - June 2018
               </p>
-              <p className="mt-2"></p>
-              <p className="mt-2"></p>
             </div>
           </div>
         </div>
@@ -115,22 +102,18 @@ export default function AboutPage() {
               <p className="text-muted-foreground">
                 Sophos • June 2015 - September 2015
               </p>
-              {/* <p className="mt-2"></p> */}
             </div>
             <div className="border-l-2 border-primary pl-4">
               <h3 className="text-xl font-bold">SQA Test Engineer</h3>
               <p className="text-muted-foreground">
                 Karl Storz Imaging • June 2014 - June 2015
               </p>
-              {/* <p className="mt-2">
-              </p> */}
             </div>
             <div className="border-l-2 border-primary pl-4">
               <h3 className="text-xl font-bold">Assistant Web Developer</h3>
               <p className="text-muted-foreground">
                 University of Californica, Santa Barbara • June 2012 - June 2014
               </p>
-              {/* <p className="mt-2"></p> */}
             </div>
           </div>
         </div>
