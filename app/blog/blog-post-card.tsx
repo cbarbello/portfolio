@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 interface BlogPostCardProps {
   title: string;
@@ -34,12 +35,14 @@ export function BlogPostCard({
         <p className="mt-2 text-muted-foreground">{excerpt}</p>
       </CardContent>
       <CardFooter className="p-4 pt-0">
-        <Link
-          href={slug}
-          className="text-sm font-medium text-primary hover:underline"
-        >
-          Read More
-        </Link>
+        <Button asChild variant="outline">
+          <Link
+            href={slug}
+            className="text-sm font-medium text-primary text-align:left hover:underline"
+          >
+            Read More
+          </Link>
+        </Button>
       </CardFooter>
     </Card>
   );
