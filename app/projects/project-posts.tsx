@@ -7,11 +7,14 @@ export const projectPosts = [
     image: "/wrist-mounted-cooling-device-v4.jpeg?height=250&width=250",
     tags: ["Hardware", "Electronics", "3D Printing"],
     slug: "cooling-device",
-    content: `<p>The inspiration for this project came from the fact that I'm physically dense, so I sweat often during workouts. 
+    content: `
+    <p>The inspiration for this project came from the fact that I'm physically dense, so I sweat often during workouts. 
     I had played around with peltier devices before, but never on battery. Over the years I've slowly iterated on the most-optimal
     peltier cooling device on battery, and where to place it.</p>
-    <p>You can read more about peltier devices [here](https://www.labcenter.com/blog/sim-peltier-models/), but TL;DR: you pump in 
+    &nbsp;
+    <p>You can read more about peltier devices <a href="https://www.labcenter.com/blog/sim-peltier-models/" target="_blank">here</a>, but TL;DR: you pump in 
     electricity and one side gets hot while the other gets cold. You must remove the heat quickly however.</p>
+    &nbsp;
     <p>The device is powered by a 3.7V lithium-ion battery, remains cold, and can run for about 45-60 minutes on a full charge. 
     When it's not removing heat from you, it can reach -70 degree ambient temperatures (I usually hit sub-zero due to ambient 
     temperatures in my apartment). I don't know what the temperature is when it's against your skin, but I know it's less than 
