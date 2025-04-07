@@ -23,11 +23,8 @@ export async function generateMetadata({
   const { slug } = await params;
 
   const blogPost = blogPosts.find((blogPost) => blogPost.slug === slug);
-  console.log(blogPosts, slug);
 
   if (!blogPost) {
-    console.log(blogPosts, slug);
-
     return {
       title: "Blog post not found",
       description: "Blog post not found",

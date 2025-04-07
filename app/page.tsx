@@ -4,9 +4,9 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import { Button } from "@/components/ui/button";
 import { ProjectCard } from "@/app/projects/project-card";
 import { BlogPostCard } from "@/app/blog/blog-post-card";
-import { projectPosts } from "./projects/page";
 import { blogPosts } from "./blog/page";
 import type { Metadata } from "next";
+import { projectPosts } from "./projects/project-posts";
 
 const featuredProjectIds = new Set([1, 2, 4]);
 const featuredProjects = projectPosts.filter((projectPost) =>

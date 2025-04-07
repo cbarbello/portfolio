@@ -37,7 +37,7 @@ export function BlogPostCard({
       <CardFooter className="p-4 pt-0">
         <Button asChild variant="outline">
           <Link
-            href={slug}
+            href={`blog/${slug}`}
             className="text-sm font-medium text-primary text-align:left hover:underline"
           >
             Read More
