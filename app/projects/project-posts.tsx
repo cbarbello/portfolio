@@ -15,8 +15,8 @@ export const projectPosts = [
     <p>You can read more about peltier devices <a href="https://www.labcenter.com/blog/sim-peltier-models/" target="_blank">here</a>, but TL;DR: you pump in 
     electricity and one side gets hot while the other gets cold. You must remove the heat quickly however.</p>
     &nbsp;
-    <p>The device is powered by a 3.7V lithium-ion battery, remains cold, and can run for about 45-60 minutes on a full charge. 
-    When it's not removing heat from you, it can reach -70 degree ambient temperatures (I usually hit sub-zero due to ambient 
+    <p>The device is powered by a 3.7V lithium-ion battery, remains cold on your skin, and can run for about 45-60 minutes on a full charge. 
+    When it's not removing heat from you, it can reach -70F degrees ambient temperature (I usually hit sub-zero due to ambient 
     temperatures in my apartment). I don't know what the temperature is when it's against your skin, but I know it's less than 
     the freezing point of water.</p>
   `,
