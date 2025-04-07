@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
 
 export const metadata = {
   title: "About | Casey Barbello",
@@ -170,8 +169,8 @@ export default function AboutPage() {
                   target="_blank"
                   className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                 >
-                  Github Link (Please don't judge my code, I wrote it in a
-                  night).
+                  Github Link (Please don't judge my code, I wrote it in a night
+                  in college).
                 </a>
               </p>
             </div>

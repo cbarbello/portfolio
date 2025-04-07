@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
-export const projectPosts = [
+export const blogPosts = [
   {
     slug: "placeholder",
     title: "Placeholder",
@@ -18,35 +18,32 @@ export const projectPosts = [
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const projectPost = projectPosts.find(
-    (projectPost) => projectPost.slug === params.slug
-  );
+  const { slug } = await params;
 
-  if (!projectPost) {
+  const blogPost = blogPosts.find((blogPost) => blogPost.slug === slug);
+  console.log(blogPosts, slug);
+
+  if (!blogPost) {
+    console.log(blogPosts, slug);
+
     return {
-      title: "Project post not found",
-      description: "Project post not found",
+      title: "Blog post not found",
+      description: "Blog post not found",
     };
   }
 
   return {
-    title: `${projectPost.title} | Casey Barbello's Projects`,
-    description: projectPost.content.substring(0, 160).replace(/<[^>]*>/g, ""),
+    title: `${blogPost.title} | Casey Barbello's Blog`,
+    description: blogPost.content.substring(0, 160).replace(/<[^>]*>/g, ""),
   };
 }
 
-export default function BlogprojectPostPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  const projectPost = projectPosts.find(
-    (projectPost) => projectPost.slug === params.slug
-  );
+export default function BlogPostPage({ params }: { params: { slug: string } }) {
+  const blogPost = blogPosts.find((blogPost) => blogPost.slug === params.slug);
 
-  if (!projectPost) {
+  if (!blogPost) {
     notFound();
   }
 
@@ -62,14 +59,14 @@ export default function BlogprojectPostPage({
         </Link>
 
         <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-          {projectPost.title}
+          {blogPost.title}
         </h1>
-        <p className="mt-4 text-muted-foreground">{projectPost.date}</p>
+        <p className="mt-4 text-muted-foreground">{blogPost.date}</p>
 
         <div className="relative mt-8 aspect-square overflow-hidden rounded-xl">
           <Image
-            src={projectPost.image || "/placeholder.png"}
-            alt={projectPost.title}
+            src={blogPost.image || "/placeholder.png"}
+            alt={blogPost.title}
             fill
             className="object-cover"
             priority
@@ -78,7 +75,7 @@ export default function BlogprojectPostPage({
 
         <div
           className="prose prose-gray dark:prose-invert mt-8 max-w-none"
-          dangerouslySetInnerHTML={{ __html: projectPost.content }}
+          dangerouslySetInnerHTML={{ __html: blogPost.content }}
         />
       </div>
     </div>

@@ -1,7 +1,8 @@
 import { ProjectCard } from "@/app/projects/project-card";
 import Link from "next/link";
+import { title } from "process";
 
-export const projects = [
+export const projectPosts = [
   {
     id: 1,
     title: "Wrist-Mounted Cooling Device",
@@ -9,7 +10,10 @@ export const projects = [
       "I created a wrist-mounted cooling device that can literally give you frostbite.",
     image: "/wrist-mounted-cooling-device-v4.jpeg?height=325&width=325",
     tags: ["Hardware", "Electronics", "3D Printing"],
-    slug: "/projects/peltier-device",
+    slug: "cooling-device",
+    content: `
+    <p>Something I did.</p>
+  `,
   },
   {
     id: 2,
@@ -17,7 +21,10 @@ export const projects = [
     description: "A disco ball earring that spins.",
     image: "/spinning-disco-ball-earring.jpeg?height=325&width=325",
     tags: ["Hardware", "Electronics", "3D Printing"],
-    slug: "/projects/disco-ball-earring",
+    slug: "disco-ball-earring",
+    content: `
+    <p>Something I did.</p>
+  `,
   },
   {
     id: 3,
@@ -25,7 +32,10 @@ export const projects = [
     description: "It spins when the sun hits it for even growth.",
     image: "/solar-powered-spinning-planter.jpeg?height=325&width=325",
     tags: ["Hardware", "Electronics", "3D Printing"],
-    slug: "/projects/spinning-planter",
+    slug: "spinning-planter",
+    content: `
+    <p>Something I did.</p>
+  `,
   },
   {
     id: 4,
@@ -33,7 +43,10 @@ export const projects = [
     description: "It sort of flies. I wrote the flight controller.",
     image: "/custom-built-drone.jpeg?height=325&width=325",
     tags: ["Hardware", "Electronics", "3D Printing", "C++"],
-    slug: "/projects/cutom-built-drone",
+    slug: "custom-built-drone",
+    content: `
+    <p>Something I did.</p>
+  `,
   },
   {
     id: 5,
@@ -41,7 +54,10 @@ export const projects = [
     description: "Waters plants, and the walls.",
     image: "/over-powered-squirt-gun.jpeg?height=325&width=325",
     tags: ["Hardware", "Electronics"],
-    slug: "/projects/over-powered-squirt-gun",
+    slug: "over-powered-squirt-gun",
+    content: `
+    <p>Something I did.</p>
+  `,
   },
 ];
 
@@ -62,14 +78,14 @@ export default function ProjectsPage() {
           finds.
         </p>
         <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 place-content-center">
-          {projects.map((project) => (
+          {projectPosts.map(({ id, title, description, image, tags, slug }) => (
             <ProjectCard
-              key={project.id}
-              title={project.title}
-              description={project.description}
-              image={project.image}
-              tags={project.tags}
-              slug={project.slug}
+              key={id}
+              title={title}
+              description={description}
+              image={image}
+              tags={tags}
+              slug={slug}
             />
           ))}
         </div>

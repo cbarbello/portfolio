@@ -7,7 +7,7 @@ export const blogPosts = [
     excerpt: "It's a placeholder. Don't click on it.",
     date: "March 15, 2023",
     image: "/placeholder.png?height=325&width=325",
-    slug: "/blog/placeholder",
+    slug: "placeholder",
   },
 ];
 
@@ -27,14 +27,14 @@ export default function BlogPage() {
           I have opinions and stuff.
         </p>
         <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {blogPosts.map((blogPost) => (
+          {blogPosts.map(({ id, title, excerpt, date, image, slug }) => (
             <BlogPostCard
-              key={blogPost.id}
-              title={blogPost.title}
-              excerpt={blogPost.excerpt}
-              date={blogPost.date}
-              image={blogPost.image}
-              slug={blogPost.slug}
+              key={id}
+              title={title}
+              excerpt={excerpt}
+              date={date}
+              image={image}
+              slug={slug}
             />
           ))}
         </div>

@@ -15,3 +15,10 @@ Link: https://www.caseyjbarbello.com
 1. Fork this repository
 2. Run `pnpm install`
 3. Run `pnpm dev`
+
+## TODOS
+
+- Extract constants
+- Use sets for posts
+- Replace email and phone number with contact form
+- Add tests

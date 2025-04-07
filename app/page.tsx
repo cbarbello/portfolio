@@ -4,13 +4,13 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import { Button } from "@/components/ui/button";
 import { ProjectCard } from "@/app/projects/project-card";
 import { BlogPostCard } from "@/app/blog/blog-post-card";
-import { projects } from "./projects/page";
+import { projectPosts } from "./projects/page";
 import { blogPosts } from "./blog/page";
 import type { Metadata } from "next";
 
 const featuredProjectIds = new Set([1, 2, 4]);
-const featuredProjects = projects.filter((project) =>
-  featuredProjectIds.has(project.id)
+const featuredProjects = projectPosts.filter((projectPost) =>
+  featuredProjectIds.has(projectPost.id)
 );
 
 const featuredBlogPostIds = new Set([1]);
