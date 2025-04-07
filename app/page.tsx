@@ -32,7 +32,9 @@ export default function HomePage() {
           <div className="container px-12 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
-                <h1>Casey Barbello</h1>
+                <h1 className="text-5xl font-bold tracking-tighter sm:text-5xl">
+                  Casey Barbello
+                </h1>
                 <h2 className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
                   Senior Full Stack Software Engineer
                 </h2>

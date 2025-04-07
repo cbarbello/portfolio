@@ -55,7 +55,7 @@ export default function ProjectsPage() {
     <div className="container px-4 py-12 md:px-6 md:py-24 place-content-center">
       <div className="mx-auto max-w-5xl">
         <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-          My Projects
+          Projects
         </h1>
         <p className="mt-4 max-w-[700px] text-gray-500 md:text-xl dark:text-gray-325">
           A collection of my side projects, experiments, and other interesting
