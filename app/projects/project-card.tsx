@@ -44,7 +44,7 @@ export function ProjectCard({
       <CardFooter className="p-4 pt-0">
         <Button asChild variant="outline">
           <Link
-            href={slug}
+            href={`projects/${slug}`}
             className="text-sm font-medium text-primary text-align:left hover:underline"
           >
             View Project

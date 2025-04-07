@@ -54,7 +54,7 @@ export const projectPosts = [
     description: "Waters plants, and the walls.",
     image: "/over-powered-squirt-gun.jpeg?height=325&width=325",
     tags: ["Hardware", "Electronics"],
-    slug: "over-powered-squirt-gun",
+    slug: "/projects/over-powered-squirt-gun",
     content: `
     <p>Something I did.</p>
   `,
