@@ -1,9 +1,9 @@
 export const projectPosts = [
   {
     id: 1,
-    title: "Wrist-Mounted Cooling Device",
+    title: "Body-Mounted Cooling Device",
     description:
-      "I created a wrist-mounted cooling device that can literally give you frostbite.",
+      "I created a body-mounted cooling device that can literally give you frostbite.",
     image: "/wrist-mounted-cooling-device-v4.jpeg?height=250&width=250",
     tags: ["Hardware", "Electronics", "3D Printing"],
     slug: "cooling-device",

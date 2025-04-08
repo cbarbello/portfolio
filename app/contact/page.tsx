@@ -32,12 +32,10 @@ export default function ContactPage() {
               </p>
               <div className="flex flex-col items-center justify-center space-y-4 text-center mt-4">
                 <div className="flex items-center gap-3">
-                  <Mail className="h-5 w-5 text-primary" />
-                  <span>caseyjbarbello@gmail.com</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Phone className="h-5 w-5 text-primary" />
-                  <span>+1 818-568-3624</span>
+                  <span>
+                    Actually... let me build a contact form. For now, just find
+                    me on Linkedin or something :{"("}
+                  </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="h-5 w-5 text-primary" />

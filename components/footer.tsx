@@ -30,13 +30,6 @@ export function Footer() {
             <Linkedin className="h-5 w-5" />
             <span className="sr-only">LinkedIn</span>
           </Link>
-          <a
-            href="mailto:caseyjbarbello@gmail.com"
-            target="_blank"
-            className="text-muted-foreground hover:text-primary"
-          >
-            <Mail className="h-5 w-5" />
-          </a>
         </div>
       </div>
     </footer>
