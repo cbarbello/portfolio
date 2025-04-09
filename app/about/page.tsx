@@ -40,7 +40,7 @@ export default function AboutPage() {
             </p>
             <p className="mt-4 text-gray-500 dark:text-gray-400">
               I also have a hardware side to me that started when I was a child
-              (yes, I used to dumpster-dive for electronics to dissasemble). I
+              (yes, I used to dumpster-dive for electronics to disassemble). I
               have now accumulated enough stuff that I can often rapidly turn a
               random idea into reality.
             </p>
