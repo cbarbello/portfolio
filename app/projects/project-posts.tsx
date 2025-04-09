@@ -19,6 +19,8 @@ export const projectPosts = [
     When it's not removing heat from you, it can reach -70F degrees ambient temperature (I usually hit sub-zero due to ambient 
     temperatures in my apartment). I don't know what the temperature is when it's against your skin, but I know it's less than 
     the freezing point of water.</p>
+    &nbsp;
+    <p>(I'll write more later)</p>
   `,
   },
   {
@@ -29,7 +31,12 @@ export const projectPosts = [
     tags: ["Hardware", "Electronics", "3D Printing"],
     slug: "disco-ball-earring",
     content: `
-    <p>Something I did.</p>
+    <p>The picture you see here is a V4. It took a ridiculous amount of labor to glue mirrors on.</p>
+    &nbsp;
+    <p>It only weighs a few grams, runs on a 60mah battery, rotates around its' own axis, and honestly might get caught in your hair. 
+    It's pretty cool though.</p>
+    &nbsp;
+    <p>(I'll write more later)</p>
   `,
   },
   {
@@ -40,7 +47,10 @@ export const projectPosts = [
     tags: ["Hardware", "Electronics", "3D Printing"],
     slug: "spinning-planter",
     content: `
-    <p>Something I did.</p>
+    <p>The photo you see above is a v0 that was hot-fixed. The solar panel is attached to the window, but I plan to make this 
+    self-contained by mounting the motor to the planter and using a flexible solar panel.</p>
+    &nbsp;
+    <p>(I'll write more later)</p>
   `,
   },
   {
@@ -51,7 +61,11 @@ export const projectPosts = [
     tags: ["Hardware", "Electronics", "3D Printing", "C++"],
     slug: "custom-built-drone",
     content: `
-    <p>Something I did.</p>
+    <p>I attempted to build a drone from scratch, flight controller and all. I learned quite a bit, like how the adjacent rotors have to spin 
+    in opposite directions to avoid the entire drone spinning on its' x-axis. I think the one thing I forgot was that the accelleration of one 
+    motor sorta throws off the whole "cancelling drone rotation out" thing.</p>
+    &nbsp;
+    <p>(I'll write more later)</p>
   `,
   },
   {
@@ -62,7 +76,12 @@ export const projectPosts = [
     tags: ["Hardware", "Electronics"],
     slug: "/projects/over-powered-squirt-gun",
     content: `
-    <p>Something I did.</p>
+    <p>I bought an automatic squirt gun online and immediately thought "what would happen if I boosted the voltage from 7.4V to 20V?</p>
+    &nbsp;
+    <p>It turns out that it shoots at, like, quadruple the frequency it did prior. I watered my plants with it - it worked great, aside 
+    from the fact that the water shots move fast enough to spray a wide circumference. 
+    &nbsp;
+    <p>(I'll write more later)</p>
   `,
   },
 ];

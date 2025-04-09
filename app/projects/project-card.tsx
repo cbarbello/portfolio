@@ -41,7 +41,7 @@ export function ProjectCard({
           ))}
         </div>
       </CardContent>
-      <CardFooter className="p-4 pt-0">
+      <CardFooter className="p- pt-0">
         <Button asChild variant="outline">
           <Link
             href={`projects/${slug}`}
