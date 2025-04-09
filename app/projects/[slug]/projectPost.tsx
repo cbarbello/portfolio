@@ -54,7 +54,7 @@ export default function ProjectPostPage({
           {projectPost.title}
         </h1>
 
-        <div className="relative mt-8 aspect-square overflow-hidden rounded-xl">
+        <div className="relative mt-8 aspect-video overflow-hidden rounded-xl">
           <Image
             src={projectPost.image || "/placeholder.png"}
             alt={projectPost.title}

@@ -26,10 +26,10 @@ export default function AboutPage() {
               About Me
             </h1>
             <p className="mt-4 text-gray-500 dark:text-gray-400">
-              Hi, I'm Casey Barbello, a Senior Full Stack developer with with
-              over 8 years of experience working across the stack. I left my
-              previous career at Meta to pursue my hobbies and find a position
-              that better aligns with my interests.
+              Hi, I'm Casey Barbello, a Senior Full Stack Engineer with over 8
+              years of experience working across the stack. I left my previous
+              career at Meta to pursue my hobbies and find a position that
+              better aligns with my interests.
             </p>
             <p className="mt-4 text-gray-500 dark:text-gray-400">
               I'm a curious person by nature, so I'm passionate about learning

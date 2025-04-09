@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Casey Barbello - Senior Full Stack Engineer",
   description:
-    "Personal portfolio and blog of Casey Barbello, a Senior Full Stack Engineer.",
+    "Personal portfolio of Casey Barbello, a Senior Full Stack Engineer.",
   generator: "v0.dev",
 };
 
