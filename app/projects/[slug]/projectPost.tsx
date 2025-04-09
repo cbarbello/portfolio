@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import { projectPosts } from "@/app/projects/page";
+import { projectPosts } from "../project-posts";
 
 export async function generateMetadata({
   params,
