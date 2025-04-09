@@ -34,7 +34,14 @@ export default function ContactPage() {
                 <div className="flex items-center gap-3">
                   <span>
                     Actually... let me build a contact form. For now, just find
-                    me on Linkedin or something :{"("}
+                    me on{" "}
+                    <a
+                      href="https://www.linkedin.com/in/cbarbello/"
+                      target="_blank"
+                    >
+                      Linkedin
+                    </a>{" "}
+                    or something :{")"}
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
