@@ -12,13 +12,7 @@ Link: https://www.caseyjbarbello.com
 
 ## Steps to Run
 
-1. Fork this repository
-2. Run `pnpm install`
-3. Run `pnpm dev`
-
-## TODOS
-
-- Extract constants
-- Use sets for posts
-- Replace email and phone number with contact form
-- Add tests
+1. Navigate to your development folder
+2. Fork this repository by running `git clone https://github.com/cbarbello/portfolio.git`
+3. Run `pnpm install`
+4. Run `pnpm dev`
