@@ -41,8 +41,8 @@ export function ProjectCard({
           ))}
         </div>
       </CardContent>
-      <CardFooter className="p- pt-0">
-        <Button asChild variant="outline">
+      <CardFooter>
+        <Button variant="outline">
           <Link
             href={`projects/${slug}`}
             className="text-sm font-medium text-primary text-align:left hover:underline"

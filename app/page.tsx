@@ -36,10 +36,11 @@ export default function HomePage() {
                 {"(This site is under construction)"}
               </p>
               <div className="space-x-4">
-                <Button asChild variant="outline">
+                <Button variant="outline">
                   <Link
                     href="https://github.com/cbarbello/portfolio"
                     target="_blank"
+                    className="hover:underline"
                   >
                     Source Code
                   </Link>
@@ -63,19 +64,21 @@ export default function HomePage() {
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 mt-8">
-              {featuredProjects.map((project) => (
-                <ProjectCard
-                  key={project.id}
-                  title={project.title}
-                  description={project.description}
-                  image={project.image}
-                  tags={project.tags}
-                  slug={project.slug}
-                />
-              ))}
+              {featuredProjects.map(
+                ({ id, title, description, image, tags, slug }) => (
+                  <ProjectCard
+                    key={id}
+                    title={title}
+                    description={description}
+                    image={image}
+                    tags={tags}
+                    slug={slug}
+                  />
+                )
+              )}
             </div>
-            <div className="flex justify-center mt-8">
-              <Button asChild>
+            <div className="container mx-auto mt-8 flex justify-center">
+              <Button variant="outline">
                 <Link href="/projects" className="flex items-center">
                   View All Projects
                   <ArrowRight className="ml-2 h-4 w-4" />
