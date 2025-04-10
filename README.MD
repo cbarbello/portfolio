@@ -14,5 +14,5 @@ Link: https://www.caseyjbarbello.com
 
 1. Navigate to your development folder
 2. Fork this repository by running `git clone https://github.com/cbarbello/portfolio.git`
-3. Run `pnpm install`
-4. Run `pnpm dev`
+3. Run `pnpm install`, `npm install`, or `yarn install`
+4. Run `pnpm dev`, `npm dev`, or `yarn dev`
