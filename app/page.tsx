@@ -6,7 +6,7 @@ import { ProjectCard } from "@/app/projects/project-card";
 import type { Metadata } from "next";
 import { projectPosts } from "./projects/project-posts";
 
-const featuredProjectIds = new Set([1, 2, 4]);
+const featuredProjectIds = new Set([1, 2, 3]);
 const featuredProjects = projectPosts.filter((projectPost) =>
   featuredProjectIds.has(projectPost.id)
 );
