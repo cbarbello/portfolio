@@ -58,38 +58,23 @@ export function Header() {
         </div>
       </div>
       {mobileMenuOpen && (
-        <div className="fixed inset-0 z-50 bg-background md:hidden">
-          <div className="container flex h-16 items-center justify-between px-4">
-            <Link href="/" className="flex items-center space-x-2">
-              <span className="text-xl font-bold">CB</span>
-            </Link>
-            <Button
-              variant="ghost"
-              size="icon"
+        <nav className="container grid gap-6 px-4 pb-8 pt-6 justify-items-end-safe">
+          {navItems.map((item) => (
+            <Link
+              key={item.path}
+              href={item.path}
+              className={cn(
+                "flex items-center text-lg font-medium transition-colors hover:text-primary",
+                pathname === item.path
+                  ? "text-primary"
+                  : "text-muted-foreground"
+              )}
               onClick={() => setMobileMenuOpen(false)}
             >
-              <X className="h-6 w-6" />
-              <span className="sr-only">Close menu</span>
-            </Button>
-          </div>
-          <nav className="container grid gap-6 px-4 pb-8 pt-6">
-            {navItems.map((item) => (
-              <Link
-                key={item.path}
-                href={item.path}
-                className={cn(
-                  "flex items-center text-lg font-medium transition-colors hover:text-primary",
-                  pathname === item.path
-                    ? "text-primary"
-                    : "text-muted-foreground"
-                )}
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                {item.name}
-              </Link>
-            ))}
-          </nav>
-        </div>
+              {item.name}
+            </Link>
+          ))}
+        </nav>
       )}
     </header>
   );
